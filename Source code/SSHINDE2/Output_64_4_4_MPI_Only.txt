@@ -1,0 +1,13 @@
+-bash-4.1$ mpdboot -n 4
+-bash-4.1$ mpdtrace -l
+mnode10_40832 (192.168.0.10)
+mnode1_43842 (192.168.0.1)
+mnode3_33280 (192.168.0.3)
+mnode2_42906 (192.168.0.2)
+-bash-4.1$  mpicc -o sampleSort sampleSort.c  -std=c99 -lm
+-bash-4.1$ mpiexec -n 4 ./sampleSort
+Value of p n t 4 64 4 
+
+THE SORTED OUTPUT IS - 
+ 7  9  10  13  17  19  21  23  25  26  27  28  29  29  41  42  51  53  58  61  110  113  121  123  125  126  128  129  141  142  151  153  158  161  210  213  217  219  221  223  225  226  228  229  241  242  251  253  258  261  2110  2113  2121  2123  2125  2126  2128  2129  2141  2142  2151  2153  2158  2161 
+Approx. Time for execution : 0.032438 -bash-4.1$ 
